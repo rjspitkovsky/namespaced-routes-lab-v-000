@@ -9,8 +9,8 @@ class ArtistsController < ApplicationController
 
   def new
     if Preference.allow_create_artists == true
-    @artist = Artist.new
-    end 
+      @artist = Artist.new
+    end
   end
 
   def create
